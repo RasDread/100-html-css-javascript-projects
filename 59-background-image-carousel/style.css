@@ -28,10 +28,6 @@ body {
   z-index: 1;
 }
 
-.img1 {
-  background-image: url("./images/photo1.jpg");
-}
-
 .arrow-btn {
   position: fixed;
   bottom: 10vh;
@@ -51,4 +47,24 @@ body {
   color: crimson;
   font-size: 3rem;
   cursor: pointer;
+}
+
+/* Animation For JavaScript */
+.animateTransition {
+  animation: animation var(--transition-speed) ease;
+}
+
+@keyframes animation {
+  0% {
+    transform: translateX(5px);
+    filter: blur(4px);
+  }
+  50% {
+    transform: translateX(-5px);
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
 }
